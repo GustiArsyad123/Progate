@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!-- Create Wesbite Head-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1">
+    <title>My Portofolio</title> 
+    <link rel="stylesheet" href="css/stylesheet.css"> <!----CSS link----->
+    <link rel="stylesheet" href="css/responsive.css"> <!----Create 7. responsive link----->
+    <!-- Load icon library -->
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script> <!--Dark mode link-->
+    <script src="https://kit.fontawesome.com/183a761016.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+
+  </head>
+
+    <!-- Create wesbite Body-->
+    <body>
+      
+        <!-- Create 1. Header-->
+        <header>
+          <div class="container">
+             <img src="Images/LogoIkan.jpg" class="logo">
+             <span class="myStore">My Store</span>
+          </div>
+          
+          <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">TESTIMONIALS</a></li>
+                    <li><a href="#">MEET US</a></li>
+                </ul>
+            </nav>
+          </div>
+  
+          <div id="menuBtn">
+            <img src="Images/menu.png" id="menu">
+          </div>
+           
+          <!-- Create 6. Animations-->
+          <script>
+            let menuBtn = document.getElementById("menuBtn")
+            let sideNav = document.getElementById("sideNav")
+            let menu = document.getElementById("menu")
+  
+            sideNav.style.right = "-200px";
+
+            menuBtn.onclick = function(){
+              if(sideNav.style.right === "-200px"){
+                sideNav.style.right = "0";
+                menu.src = "Images/close.png";
+              }else{
+                sideNav.style.right = "-200px";
+                menu.src = "Images/menu.png";
+              }
+            }
+          </script>
+                    
+        </header>
+
+        <!--Create Dark mode click-->
+        <div class="mode">
+          Dark mode:            
+          <span class="change">OFF</span>
+        </div>
+        
+      <!--Create 2. Main-->
+      <main>
+        <!--Create 3. Section-->
+        <section class="banner">
+          <div class="banner-text">
+            <h1>Bungin Island Sea Shop</h1>
+            <p>This website offers you fishery products from bungin island such as fish, squid, crabs, shellfish, and so on.</p>
+            <div class="banner-btn">
+              <a href="#"><span></span>Find Out</a>
+              <a href="#"><span></span>Read More</a>
+            </div>
+          </div>
+          
+        <div class="top-wrapper">
+          <div class="btn-wrapper">
+            <a href="#" class="btn instagram"><span class="fa fa-instagram"></span>Sign up with Instagram</a>
+            <a href="#" class="btn youtube"><span class="fa fa-youtube"></span>Sign up with Youtube</a>
+            <p>or</p>
+            <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Sign up with Facebook</a>
+            <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Sign up with Twitter</a>
+          </div>
+        </div>
+        </section>
+      
+        <!--Menu Features-->
+        <section id="feature">
+          <div class="title-text">
+            <p>PRODUCTS</p>
+            <h1>Why you choose the product?</h1>
+          </div>
+          <div class="feature-box">
+              <div class="features">
+                  <h1>Experienced Costumers</h1>
+                  <div class="features-desc">
+                     <div class="features-text">
+                        <p>We provide quality Bungin Island marine fish products because their 
+                          freshness is guaranteed, and why should you choose our products because 
+                          they are cheap and fresh, which are directly taken from Bungin Island 
+                          fishermen, whether dry, wet or such as grouper, snapper and others. 
+                          besides that our products also like crabs, squid, shrimp and so on.</p>
+                     </div>
+                  </div>
+              </div>
+              <div class="features-img">
+                <img src="Images/products.jpg" alt="">
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Services -->
+        <section id="service">
+          <div class="title-text">
+            <p>SERVICES</p>
+            <h1>We provide the better products</h1>
+          </div>
+          <div class="service-box">
+              <div class="single-service">
+                <img src="Images/babyTuna.JPG">
+              </div>
+              <div class="single-service">
+                <img src="Images/kerapuMerah.JPG">
+              </div>
+              <div class="single-service">
+                <img src="Images/ikanCampur.JPG">
+              </div>
+              <div class="single-service">
+                <img src="Images/ikanCampur2.JPG">
+              </div>
+          </div>
+        </section>
+
+        <div class="contact-us">
+          <h1>CONTACT US</h1>
+          <h2>We'd like to help!</h2>
+          
+          <!--Create 4. Form-->
+          <form action="">
+              <input type="text" placeholder="Your_name"><br>
+              <input type="email" placeholder="Email"><br>
+              <textarea type="text" placeholder="Message" cols="30" rows="5"></textarea><br>
+              <span><input type="submit" value="Send" class="send"></span>
+          </form>
+        </div>
+
+     </main>            
+         
+     <!--Create 8. JavaScript for "Dark and Ligth mode conditions" -->
+     <script>
+      $( ".change" ).on("click", function() {
+          if( $( "body" ).hasClass( "dark" )) {
+              $( "body" ).removeClass( "dark" );
+              $( ".change" ).text( "OFF" );
+          } else {
+              $( "body" ).addClass( "dark" );
+              $( ".change" ).text( "ON" );
+          }
+      });
+     </script>
+     
+    <!--Create 5. Footer-->
+     <footer>
+        <div class="sosmed">
+          <span class="fa fa-facebook"></span>
+          <span class="fa fa-instagram"></span>
+          <span class="fa fa-twitter"></span>
+          <span class="fa fa-youtube"></span>
+        </div>
+        <div class="menu-sosmed">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+            <li><a href="#">MEET US</a></li>
+          </ul>
+        </div>
+        <div class="copyrigth">
+          <p>Copyright © 2021 Toko Laut Pulau Bungin, LLC. All Right Reserved.</p>
+          <p>Website by
+          <b>Gusti Arsyad</b></p>
+        </div>
+     </footer>
+
+    </body>
+
+</html>

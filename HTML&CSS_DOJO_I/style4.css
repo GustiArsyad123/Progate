@@ -1,0 +1,122 @@
+/* Reset CSS (DO NOT DELETE) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next";
+}
+
+li {
+  list-style: none;
+}
+
+/* Write your code below */
+.header{
+  background-color: #26d0c9;
+  color:#fff;
+  font-size:36px;
+  height:90px;
+  
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.header-list li {
+  float: left;
+  padding: 33px 20px;
+  font-size: 15px;
+}
+
+.main {
+  padding: 100px 80px;
+}
+
+h1{
+  font-size:140pX;
+ 
+}
+
+h2{
+  font-size:60pX;
+ 
+}
+.container span{
+  color:#ff4a4a;
+}
+
+.contents {
+  height: 500px;
+  margin-top:100px
+  /* Change the margin-top property to 100px */
+ }
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  /* Change the font-size to 28px */
+  font-size:28px;
+  
+  /* Change the padding-bottom property to 15px */
+  padding-bottom:15px;
+  
+  /* Change the margin-bottom property to 50px */
+   margin-bottom:50px;
+  
+}
+
+.contents-item {
+  float: left;
+  /* Change the margin-right property to 40px */
+  margin-right:40px;
+  
+}
+
+.contents-item p{
+/* Change the font-size and margin-top of <p> tags within contents-item */
+font-size:24px;
+margin-top:30px;
+  
+}
+
+.contact-form {
+  padding-top: 100px;
+}
+
+/* Add CSS for <input> and <textarea> tags */
+.input-email {
+width: 400px;
+margin-top: 10px;
+margin-bottom: 30px;
+padding: 20px;
+font-size: 18px;
+color:#dee7ec;
+border: solid 1px;
+}
+
+.input-textarea{
+width: 400px;
+margin-top: 10px;
+margin-bottom: 30px;
+padding: 20px;
+font-size: 18px;
+color:#dee7ec;
+border: solid 1px;
+}
+/* Add CSS for contact-submit */
+.contact-submit{
+background-color:#dee7ec;
+width: 400px;
+height:50px;
+font-size:18px;
+color:#889eab;
+border: solid 1px;
+margin-bottom: 30px;
+}
